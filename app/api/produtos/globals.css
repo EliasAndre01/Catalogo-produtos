@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cor-primaria: #3a86ff;
+  --cor-secundaria: #8338ec;
+  --cor-fundo: #f8f9fa;
+  --cor-texto: #212529;
+  --cor-borda: #dee2e6;
+  --cor-desconto: #ff006e;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+.btn-desconto {
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-desconto:hover {
+  background-color: var(--cor-secundaria);
+  transform: translateY(-2px);
+}
+
+.btn-desconto:active {
+  transform: translateY(0);
+}
+
+.produto-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.produto-card:hover {
+  transform: translateY(-5px);
+}
+
+.produto-nome {
+  color: var(--cor-primaria);
+}
+
+.preco-original {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.preco-desconto {
+  color: var(--cor-desconto);
+}
